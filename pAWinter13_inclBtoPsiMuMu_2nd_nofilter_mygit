@@ -6,7 +6,7 @@ echo $pwddir
 cd $CMSSW_BASE/src
 source  /afs/cern.ch/cms/cmsset_default.sh
 eval `scram runtime -sh`
-curl  -s   https://raw.githubusercontent.com/CmsHI/pPbJPsiAnalysis/master/MCConfigs/Configuration/GenProduction/python/HI/PYTHIA6_inclBtoPsiMuMu_5TeV02_nofilter_cff.py --retry 2 --create-dirs -o  Configuration/GenProduction/python/HI/PYTHIA6_inclBtoPsiMuMu_5TeV02_nofilter_cff.py
+curl  -s   https://raw.githubusercontent.com/SongkyoLee/MCConfigs/master/Configuration/GenProduction/python/HI/PYTHIA6_inclBtoPsiMuMu_5TeV02_nofilter_cff.py --retry 2 --create-dirs -o  Configuration/GenProduction/python/HI/PYTHIA6_inclBtoPsiMuMu_5TeV02_nofilter_cff.py
 
 scram b
 cd $pwddir
