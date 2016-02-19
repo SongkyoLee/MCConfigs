@@ -4,7 +4,8 @@ pwddir=$(pwd)
 echo $pwddir
 
 cd $CMSSW_BASE/src
-source  /afs/cern.ch/cms/cmsset_default.sh
+#source  /afs/cern.ch/cms/cmsset_default.sh
+source  /cvmfs/cms.cern.ch/cmsset_default.sh
 eval `scram runtime -sh`
 curl  -s  https://raw.githubusercontent.com/cms-sw/genproductions/V02-03-54/python/HI/PYTHIA6_JPsiWithFSR_tuneD6T_5TeV02_cff.py --retry 2 --create-dirs -o  Configuration/GenProduction/python/HI/PYTHIA6_JPsiWithFSR_tuneD6T_5TeV02_cff.py
 
